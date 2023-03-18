@@ -1,0 +1,49 @@
+{
+  "name": "memoization-benchmarking",
+  "version": "1.0.0",
+  "description": "Benchmarking of memoization libraries",
+  "keywords": [
+    "benchmark",
+    "memoization"
+  ],
+  "source": "src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "benchmark:s1": "tsx benchmark/singleStringParameter.ts",
+    "benchmark:s2": "tsx benchmark/singleNumberParameter.ts",
+    "benchmark:s3": "tsx benchmark/singleNonPrimitiveParameter.ts",
+    "benchmark:m1": "tsx benchmark/multiplePrimitiveParameters.ts",
+    "benchmark:m2": "tsx benchmark/multipleNonPrimitiveParameters.ts",
+    "benchmark:lrus1": "tsx benchmark/lruSingleStringParameter.ts",
+    "benchmark:lrus2": "tsx benchmark/lruSingleNumberParameter.ts",
+    "benchmark:lrus3": "tsx benchmark/lruSingleNonPrimitiveParameter.ts",
+    "benchmark:lrum1": "tsx benchmark/lruMultiplePrimitiveParameters.ts",
+    "benchmark:lrum2": "tsx benchmark/lruMultipleNonPrimitiveParameters.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "fast-memoize": "^2.5.2",
+    "lodash.memoize": "^4.1.2",
+    "mem": "^9.0.2",
+    "memoizee": "^0.4.15",
+    "memoizerific": "^1.11.3",
+    "micro-memoize": "^4.0.14",
+    "moize": "^6.1.5",
+    "nano-memoize": "^3.0.8",
+    "sonic-memoize": "^1.1.3",
+    "tinybench": "^2.4.0",
+    "tsx": "^3.12.5",
+    "typescript": "^4.9.5"
+  },
+  "author": "Animus Blue GmbH",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Animus-Blue/memoization-benchmarking.git"
+  }
+}
